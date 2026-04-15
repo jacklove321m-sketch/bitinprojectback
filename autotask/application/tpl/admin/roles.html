@@ -1,0 +1,73 @@
+{include file="../application/tpl/admin/head.html" /}
+<el-breadcrumb separator="/">
+  <el-breadcrumb-item><i class="el-icon-s-home"></i><a href="/okadmin">系统首页</a></el-breadcrumb-item>
+  <el-breadcrumb-item>{$pagemodel}</el-breadcrumb-item>
+</el-breadcrumb>
+<div class="clearfix pdtb10">
+	<div class="fl">
+		<el-button type="success" icon="el-icon-plus" size="mini" @click="edit()">新增角色</el-button>
+	</div>
+	<div class="fr">
+		<el-button type="warning" plain size="mini" @click="getlist" icon="el-icon-search">刷新</el-button>
+	</div>
+</div>
+<table>
+	<thead>
+		<tr><th width="200">角色名称</th><th>描述</th><th width="48">系统</th><th width="150">操作</th></tr>
+	</thead>
+	<tbody>
+		<tr v-for="(items,index) in lists">
+			<td>{{items.name}}</td>
+			<td>{{items.desc}}</td>
+			<td>
+				<span v-if="items.issys">是</span><span v-else>-</span>
+			</td>
+			<td>
+				<el-button type="text" @click="edit(index,'v')">查看</el-button>
+				<el-button type="text" @click="edit(index)" v-if="!items.issys">修改</el-button>
+				<el-button type="text" @click="del(index)" v-if="!items.issys">删除</el-button>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<div class="listtip" style="display:none;" v-show="isloading || lists.length<1">{{datatxt}}</div>
+
+<el-dialog
+  :title="edittitle"
+  :visible.sync="iseditshow"
+  width="800px"
+  :show-close="false"
+  :close-on-press-escape="false"
+  :close-on-click-modal="false"
+  >
+  <div>
+	<el-form ref="one" :model="one" :rules="oneRulue" label-width="80px">
+		<el-form-item label="角色名称" prop="name">
+			<el-input v-model.trim="one.name" placeholder="角色名称" :disabled="isedit"></el-input>
+		</el-form-item>
+		<el-form-item label="角色描述" prop="desc">
+			<el-input type="textarea" v-model.trim="one.desc" placeholder="角色描述" :disabled="isedit"></el-input>
+		</el-form-item>
+		<el-form-item label="权限" prop="permissions">
+			<div class="qxselboxs">
+				<div class="li" v-for="(items,index) in permissions">
+					<b class="name1">{{items.name}}</b>
+					<div class="u2 clearfix" v-if="items.item.length">
+						<div class="li2" :class="comm.isArrayCon(selpss,items2.id)?'cur':''" :disabled="isedit" v-for="(items2,index2) in items.item" @click="isedit?'':selAp(items2.id)">{{items2.name}}</div>
+					</div>
+				</div>
+				
+			</div>
+		</el-form-item>
+	</el-form>
+  </div>
+  <span slot="footer" class="dialog-footer">
+    <el-button @click="iseditshow = false" size="small"><span v-if="isedit">关 闭</span><span v-else>取 消</span></el-button>
+    <el-button type="primary" @click="editSub('one')" size="small" v-if="!isedit">确 定</el-button>
+  </span>
+</el-dialog>
+
+{include file="../application/tpl/admin/foot.html" /}
+<script src="/model/admin/roles.js"></script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+﻿body { background:url("login_bg.jpg") no-repeat;background-size: 100% 100%;background-attachment: fixed;}
+.login_icon { height: 70px; width: 132px; margin: 15px auto;/*background: url("logo.png") 0 0 no-repeat;*/}
+.login .login_in{
+    width:100%;
+    border-top:0px #cccccc solid;
+}
+.login_in input[type="text"],.login_in input[type="password"]{
+    width:100%;
+    height:40px;
+    margin: 18px 0;
+    color:#888888;
+    font-size:14px;
+    padding-left:6%;
+    border: none;
+    border-bottom:1px #c8c8c8 solid;
+    background: url("login.png") no-repeat #ffffff;
+    background-size: 70px auto;
+    box-shadow: 0 1px 1px #ddd;
+    border-radius: 5px;
+}
+.login_in input[type="text"]{
+    background-position: 0 -70px;
+}
+.login_in input.phone[type="text"]{
+    background-position: 0 -263px;
+}
+
+.login_in input[type="password"]{
+    background-position: 0 -110px;
+}
+.login_in input[type="submit"]{
+    width:100%;
+    height:40px;
+    font-size:18px;
+    color:#ffffff;
+    text-align:center;
+    line-height:40px;
+    border:0;
+    margin-top:25px;
+    background-color:#9f5fd1;
+}
+.platform h2 span{   
+    background-color: #f1f1f1;
+    font-size: 16px;
+    padding: 5px 10px;
+    width: 150px;
+    top: -15px;
+    border-radius: 5px;
+}
+
+.platform .sina_qq{
+    width:100%;
+    padding:0 35px;
+    margin-top:35px;
+}
+.platform p{
+    width:100%;
+    height:50px;
+    padding:0;
+    margin-top:20px;
+    background: url("login.png") right -230px no-repeat #e7e7e7;
+    background-size: 70px 270px;
+}
+.platform a{
+    display:block;
+    color: #555555;
+    width: 100%;
+    height:40px;
+    line-height: 40px;
+    padding-left:30px;
+    float: left;
+    margin-left: 10px;
+    background:url("login.png") no-repeat;
+    background-size: 70px 270px;
+}
+.platform a.sina{
+    background-position:0 -150px;
+}
+.platform a.qq{
+    background-position:0 -190px;
+}
+.zhuc{color: #ffffff;
+    font-size: 14px;
+    float: right;
+    margin: 10px;}
+.jizhu{
+    float: left;
+    color: #ffffff;
+    font-size: 14px;
+    margin: 10px;
+}
+/*弹出层*/
+.zbg{ position:fixed; width:100%; height:100%; top:0;z-index:10002}
+.zdiv{float:left;width:100%;overflow: hidden;margin-top:50px;background-color:#FAFAFA;left:0px;}
+.zdiv_info{margin:0 auto;width:100%;overflow: hidden; margin-top:15px;}
+.zdiv_bt{float:left;width:100%; height:40px; line-height:40px;background-color:#EFEFEF;text-align:center;FONT-SIZE:14px;color: #FF6600;}
+.zdiv_info .pinfo{
+float: left;width:27%;height:40px;line-height:40px;color: #777777;text-align: center;FONT-SIZE:13px;
+border-radius:3px;border: 1px solid #DFDFE5;margin-left:4%; margin-right:1%;margin-top:0px; margin-bottom:15px;box-sizing: border-box;background-color:#FFFFFF;}
+/*header*/
+.headerv{position:fixed;left:0;top:0;width:100%;height:50px;background:#DA4949;z-index:100;min-width:240px;margin:0 auto;}
+.headerv .logo{position:absolute;top:0;left:20%;width:105px;height:35px;background:url(logo.png) no-repeat;background-size:105px 35px; margin-top:7px;}
+.headerv .us{position:absolute;top:0;right:20%;width:24px;height:30px;background:url(dh.png) no-repeat;background-size:30px 24px; margin-top:13px;}
+
+
+
+.header{position:fixed;z-index:100;top:0;left:0;width:100%;height:50px;background:#DA4949;}
+.header .logo{display:block;text-align:center;height:30px;padding:12px 0 0 10px; margin:0 auto; color:#FFFFFF; line-height:30px;TEXT-DECORATION: NONE;FONT-SIZE:18px;}
+.header .logo1{display:block;text-align:center;height:30px;padding:12px 0 0 10px; margin:0 auto; color:#FFFFFF; line-height:30px;TEXT-DECORATION: NONE;FONT-SIZE:22px;font-family:"Microsoft YaHei",Arial;}
+.header .back {
+    
+    border: none;
+    width: 50px;
+    height: 50px;
+    text-indent: -900em;
+    overflow: hidden;
+    position: absolute;
+    top:0;
+    left:0;
+    cursor: pointer;
+    outline: none;
+    background: #DA4949 url(icon-back.png) no-repeat center center;
+    background-size: 30%;
+}
+.header .menu {
+    
+    border: none;
+    width: 50px;
+    height: 50px;
+    text-indent: -900em;
+    overflow: hidden;
+    position: absolute;
+    top:0;
+    right:0;
+    cursor: pointer;
+    outline: none;
+    background: #C12727 url(menu-button-bg.png) no-repeat center center;
+    background-size: 70%;
+}
+
+/* header */
+.header .logo1{display:block;width:130px;height:30px;padding:10px 0 0 10px; margin:0 auto; color:#FFFFFF; line-height:30px;TEXT-DECORATION: NONE;FONT-SIZE:20px;}
+.header .back1 {
+    
+    border: none;
+    width: 50px;
+    height: 50px;
+    text-indent: -900em;
+    overflow: hidden;
+    position: absolute;
+    top:0;
+    left:0;
+    cursor: pointer;
+    outline: none;
+    background-size: 30%;
+}
+.header .menu1 {
+    
+    border: none;
+    width: 50px;
+    height: 50px;
+    text-indent: -900em;
+    overflow: hidden;
+    position: absolute;
+    top:0;
+    right:0;
+    cursor: pointer;
+    outline: none;
+    background-size: 70%;
+}
+
+
+.header .close {
+    
+    border: none;
+    width: 50px;
+    height: 50px;
+    text-indent: -900em;
+    overflow: hidden;
+    position: absolute;
+    top:0;
+    right:0;
+    cursor: pointer;
+    outline: none;
+    background: #f13131 url(close.png) no-repeat center center;
+    background-size: 50%;
+}
+.ttc_cont{max-width: 422px;margin: 0 auto;padding-top: 10%;padding:0 15px;}
+.ls_0001{font-size:18px;color:#fff;}

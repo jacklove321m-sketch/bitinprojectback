@@ -1,0 +1,25 @@
+<?php
+return [
+"libra_data"=>[
+"api_form"=>"diy",
+                        "change"=>+0.530000,
+                         "close"=>0.018800,
+                         "currency_id"=>2,
+                         "currency_name"=>"ETH",
+                        "high"=>0.018790,
+                         "legal_id"=>3,
+                         "legal_name"=>"USDT",
+                          "low"=>0.018710,
+                         "match_id"=>3,
+                          "now_price"=>0.018800,
+                         "open"=>0.018700,
+                         "period"=>"1min",
+                         "symbol"=>"ETH/USDT",
+                         "time"=>"1763775900",
+                         "type"=>"daymarket",
+                         "volume"=>95090
+                  
+]
+];
+
+                    

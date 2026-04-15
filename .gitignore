@@ -1,0 +1,57 @@
+# Local env / secrets
+.env
+.env.*
+
+# Dependencies
+vendor/
+nodejs/node_modules/
+autotask/vendor/
+public/vendor/
+
+# Local tools / downloads
+composer
+wget-log
+
+# Logs / runtime / cache
+storage/logs/*
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/views/*
+storage/framework/testing/*
+storage/debugbar/*
+bootstrap/cache/*.php
+bootstrap/cache/packages.php
+bootstrap/cache/services.php
+autotask/runtime/*
+!autotask/runtime/.gitignore
+
+# Uploads / generated files
+public/upload/**
+public/upload_nft/**
+public/json/upload/**
+autotask/public/upload/**
+
+# Public static assets, images, and bundled dependencies
+public/static/
+public/admin/
+public/agents/
+public/layui/
+public/layuiadmin/
+public/manages/
+
+# Public temporary / generated files
+public/recharge_data.txt
+public/t.txt
+public/*.mobileconfig
+public/*.ttf
+
+# Maps / archives
+public/**/*.map
+*.zip
+*.rar
+*.tar
+*.tar.gz
+*.7z
+
+# Test / cache leftovers
+.phpunit.result.cache

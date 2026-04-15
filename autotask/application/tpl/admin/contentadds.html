@@ -1,0 +1,42 @@
+{include file="../application/admin/view/inc/head.html" /}
+<el-breadcrumb separator="/">
+  <el-breadcrumb-item><i class="el-icon-s-home"></i><a href="/okadmin">系统首页</a></el-breadcrumb-item>
+  <el-breadcrumb-item><a href="/okadmin/contents">内容管理</a></el-breadcrumb-item>
+  <el-breadcrumb-item>{$pagemodel}</el-breadcrumb-item>
+  <div class="fr"><el-button type="primary" @click="adds('one')" size="small" icon="el-icon-check">保存</el-button></div>
+  
+</el-breadcrumb>
+<el-form :model="one" ref="one" :rules="ruleOne" label-width="72px" class="editoneshi">
+	<el-col :span="12">
+		<el-form-item label="分类" prop="typeid">
+			<el-select v-model="one.typeid" placeholder="请选择分类" size="small">
+				<el-option
+				  v-for="item in types"
+				  :key="item.id"
+				  :label="item.name"
+				  :value="item.id">
+				</el-option>
+			  </el-select>
+		</el-form-item>
+	</el-col>
+	<el-col :span="12">
+		<el-form-item label=" ">
+		   <el-button type="success" @click="addonecontent" size="small" icon="el-icon-plus" v-if="one.contents.length<18">添加内容</el-button>
+		</el-form-item>
+	</el-col>
+	<el-col :span="24">
+		
+			<el-row class="clearfix">
+				<el-col :span="12" v-for="(items,index) in one.contents" class="nrgldnrone">
+				<el-form-item :prop="'contents.'+index+'.c'" :label="'内容'+(index+1)" :rules="[{required: true, message: '请输入内容', trigger: 'blur'},{ type: 'string', min: 20, message: '内容至少20字符', trigger: 'blur' }]">
+					<el-input type="textarea" v-model="items.c" :placeholder="'请输入内容'+(index+1)"></el-input>
+				</el-form-item>
+				
+				</el-col>
+			</el-row>
+	</el-col>
+</el-form>
+{include file="../application/admin/view/inc/foot.html" /}
+<script src="/model/admin/contentadds.js"></script>
+</body>
+</html>

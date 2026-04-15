@@ -1,0 +1,37 @@
+
+</el-main>
+</el-container>
+</el-container>
+
+
+<el-dialog
+  title="修改登录密码"
+  :visible.sync="comm.uppassISshow"
+  width="30%"
+ >
+  <div>
+	  <el-form :model="comm.uppassForm" ref="uppassForm" :rules="comm.rule_uppass" label-width="100px" status-icon label-position="left">
+	  	<el-form-item label="原　密　码" prop="oldpass">
+	  	    <el-input type="text" v-model="comm.uppassForm.oldpass" autocomplete="off" prefix-icon="el-icon-unlock" placeholder="原密码"></el-input>
+	  	</el-form-item>
+	  	<el-form-item label="新　密　码" prop="newpass">
+	  	    <el-input type="password" v-model="comm.uppassForm.newpass" autocomplete="off" show-password prefix-icon="el-icon-lock"  placeholder="新密码"></el-input>
+	  	</el-form-item>
+		<el-form-item label="重复新密码" prop="repass">
+	  	    <el-input type="password" v-model="comm.uppassForm.repass" autocomplete="off" show-password prefix-icon="el-icon-lock"  placeholder="重复新密码"></el-input>
+	  	</el-form-item>
+	  </el-form>
+  </div>
+  <span slot="footer" class="dialog-footer">
+    <el-button @click="comm.uppassISshow = false">取 消</el-button>
+    <el-button type="primary" @click="uppassSub('uppassForm')">确 定</el-button>
+  </span>
+</el-dialog>
+
+
+
+
+<script src="/static/vue/jquery-1.9.0.min.js"></script>
+<script src="/static/vue/vue.min.js"></script>
+<script src="/static/vue/member.js"></script>
+<script src="/static/eleui/index.js"></script>

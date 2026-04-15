@@ -1,0 +1,14 @@
+﻿html,body{ background:url(../images/loginbj.jpg); overflow:auto;min-width:600px;}
+.dloginbox{ width:566px; margin:auto;padding-top:50px;}
+.loginform{ background:url(../images/loginbj.png) top left no-repeat;padding-top:150px; padding-left:270px; height:385px;}
+.loginform p{ padding:14px 0;*padding:7px 0; clear:both}
+.loginform .dlbtn{ width:124px;  height:40px; text-align:center; line-height:40px; color:#fff; font-family:"微软雅黑"; font-size:16px; border:none; background:url(../images/dlbtn.gif) no-repeat; cursor:pointer; display:block; margin:auto;}
+.loginform .dltxt{ width:190px; height:30px; line-height:30px; padding:0 5px; background:url(../images/logintxt.gif) no-repeat; border:none; float:left; outline:none;}
+.loginform .dlyzm{ width:72px; height:30px; line-height:30px; padding:0 5px; background:url(../images/logintxt2.gif) no-repeat; border:none; margin-right:10px; float:left;outline:none; position:relative;}
+.loginform .dllabel{ float:left; line-height:30px;}
+.noback{ background:none;}
+
+.loginbtxt{ clear:both;padding-top:10px;color:#fff; line-height:24px; text-align:right; padding-right:20px;}
+.yzmimg{ cursor:pointer;}
+
+.memberloginbg{ background:none; background:url(../images/memberloginbg.png) top left no-repeat;}

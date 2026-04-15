@@ -1,0 +1,67 @@
+{include file="../application/admin/view/inc/head.html" /}
+<el-breadcrumb separator="/">
+  <el-breadcrumb-item><i class="el-icon-s-home"></i><a href="/okadmin">系统首页</a></el-breadcrumb-item>
+  <el-breadcrumb-item>{$pagemodel}</el-breadcrumb-item>
+</el-breadcrumb>
+<div class="clearfix pdtb10">
+	<div class="fl">
+		<el-button type="success" icon="el-icon-plus" size="mini" @click="edit(-1)">添加内容</el-button>
+		<el-button type="warning" icon="el-icon-plus" size="mini" @click="edits">批量添加内容</el-button>
+	</div>
+	<div class="fr">共{{total}}条内容</div>
+</div>
+<table>
+	<thead>
+		<tr>
+			<th width="80">ID</th><th  width="120">分类</th><th>内容</th><th width="120">操作</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr v-for="(items,index) in lists">
+			<td>{{items.id}}</td>
+			<td>{{typeid2str(items.typeid)}}</td>
+			<td>{{comm.reduceStr(items.content,60)}}...</td>
+			<td>
+				<el-button type="text" @click="edit(index)">修改</el-button>
+				<el-button type="text" @click="del(index)">删除</el-button>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<div class="listtip" style="display:none;" v-show="isloading || lists.length<1">{{datatxt}}</div>
+
+<el-dialog
+  :title="ac.type=='add'?'添加内容':'修改内容'"
+  :visible.sync="iseditshow"
+  width="800px"
+  :show-close="false"
+  :close-on-press-escape="false"
+  :close-on-click-modal="false"
+  >
+  <div>
+	<el-form ref="one" :model="one" :rules="oneRulue" label-width="60px">
+		<el-form-item label="分类" prop="typeid">
+			<el-select v-model="one.typeid" placeholder="请选择分类">
+				<el-option
+				  v-for="item in types"
+				  :key="item.id"
+				  :label="item.name"
+				  :value="item.id">
+				</el-option>
+			  </el-select>
+		</el-form-item>
+		<el-form-item label="内容" prop="content">
+			<el-input type="textarea" rows="10" v-model="one.content"></el-input>
+		</el-form-item>
+	</el-form>
+  </div>
+  <span slot="footer" class="dialog-footer">
+    <el-button @click="iseditshow = false" size="small">取 消</el-button>
+    <el-button type="primary" @click="editSub('one')" size="small">确 定</el-button>
+  </span>
+</el-dialog>
+
+{include file="../application/admin/view/inc/foot.html" /}
+<script src="/model/admin/contents.js"></script>
+</body>
+</html>

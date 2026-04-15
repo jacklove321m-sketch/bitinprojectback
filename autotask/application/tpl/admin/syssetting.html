@@ -1,0 +1,75 @@
+{include file="../application/tpl/admin/head.html" /}
+<el-breadcrumb separator="/">
+  <el-breadcrumb-item><i class="el-icon-s-home"></i><a href="/okadmin">系统首页</a></el-breadcrumb-item>
+  <el-breadcrumb-item>{$pagemodel}</el-breadcrumb-item>
+</el-breadcrumb>
+<el-form :model="one" ref="one" :rules="ruleOne" label-width="150px" class="editoneshi">
+	<el-row class="clearfix">
+		<el-col :xs="24" :sm="12" :md="12" :lg="12" :xl="8">
+		  <el-form-item prop="sitename" label="系统名称">
+				<el-input v-model.trim="one.sitename" placeholder="请输入系统名称"></el-input>
+			</el-form-item>
+		</el-col>
+		<el-col :xs="24" :sm="12" :md="12" :lg="12" :xl="8">
+		   <el-form-item prop="domain_name" label="官方网址">
+				<el-input v-model.trim="one.domain_name" placeholder="请输入官方网址"></el-input>
+			</el-form-item>
+		</el-col>
+		<el-col :xs="24" :sm="12" :md="12" :lg="12" :xl="8">
+		   <el-form-item prop="kf_weixin" label="客服微信号">
+				<el-input v-model.trim="one.kf_weixin" placeholder="请输入客服微信号"></el-input>
+			</el-form-item>
+		</el-col>
+		<el-col :xs="24" :sm="12" :md="12" :lg="12" :xl="8">
+		   <el-form-item prop="kf_qq" label="客服QQ">
+				<el-input v-model.trim="one.kf_qq" placeholder="请输入客服QQ"></el-input>
+			</el-form-item>
+		</el-col>
+		<el-col :xs="24" :sm="12" :md="12" :lg="12" :xl="8">
+		   <el-form-item prop="kf_400" label="400热线">
+				<el-input v-model.trim="one.kf_400" placeholder="请输入400热线"></el-input>
+			</el-form-item>
+		</el-col>
+		<el-col :xs="24" :sm="12" :md="12" :lg="12" :xl="8">
+		   <el-form-item prop="kf_wxcode" label="微信客服二维码">
+				<el-upload
+				  class="upload-demo"
+				  action="/okadmin/wxcodeup"
+				  :on-success="upok"
+				  :before-upload="beforeAvatarUpload"
+				  :show-file-list="false">
+				  <div style="position:relative;" v-if="one.kf_wxcode">
+					<img :src="one.kf_wxcode" width="128" height="128" style="display:block;padding:4px;border:1px solid #e4e4e4;">
+					<span style="position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,.4);color:#fff;text-align:center;height:30px;line-height:30px;">更改</span>
+				  </div>
+				  <el-button size="small" type="warning" v-else>上传</el-button>
+				</el-upload>
+			</el-form-item>
+		</el-col>
+	</el-row>
+	<el-row>
+		<el-col :xs="24" :sm="12" :md="12" :lg="12" :xl="8">
+		   <el-form-item prop="client_name" label="客户端名称">
+				<el-input type="textarea" v-model.trim="one.client_name" placeholder="请输入客户端名称。客户端title"></el-input>
+			</el-form-item>
+		</el-col>
+		<el-col :xs="24" :sm="12" :md="12" :lg="12" :xl="8">
+		   <el-form-item prop="site_keyword" label="网站关键词">
+				<el-input type="textarea" v-model.trim="one.site_keyword" placeholder="请输入网站关键词"></el-input>
+			</el-form-item>
+		</el-col>
+		<el-col :xs="24" :sm="12" :md="12" :lg="12" :xl="8">
+		   <el-form-item prop="site_desc" label="网站描述">
+				<el-input type="textarea" v-model.trim="one.site_desc" placeholder="请输入网站描述"></el-input>
+			</el-form-item>
+		</el-col>
+	</el-row>
+	<div style="text-align:center;padding:20px;">
+		<el-button type="primary" @click="adds('one')" size="small" icon="el-icon-check">保存</el-button>
+	</div>
+	
+</el-form>
+{include file="../application/tpl/admin/foot.html" /}
+<script src="/model/admin/syssetting.js"></script>
+</body>
+</html>

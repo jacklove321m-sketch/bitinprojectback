@@ -1,0 +1,41 @@
+﻿html,body{min-height:200px; overflow-y:auto;}
+.newstitlebox{position:fixed;height:85px;left:0;top:0;right:0; background:#fff;border-bottom:1px solid #ddd;}
+.newstitlebox .title{ font-size:20px; line-height:40px; height:50px; overflow:hidden; text-align:center; display:block; font-weight:bold;padding-top:10px;}
+.newstitlebox .qtbox{ text-align:center; font-size:12px; color:#888; background:#f1f1f1; line-height:30px;margin:0 10px;}
+.newstitlebox .qtbox span{margin:0 10px;}
+.newstitlebox .qtbox span i{margin-right:5px;}
+.newsconbox{padding:10px 20px;padding-top:90px; line-height:24px;}
+.newsconbox p{margin:12px 0; text-indent:2em;}
+
+.newslisttitle{ position:fixed;left:0;right:0;top:0;height:45px;}
+.newslistulbox{padding:45px 20px 45px 20px;}
+.newslistpagebox{position:fixed;left:0;right:0;bottom:0;height:40px; background:#f6f6f6;text-align:right;padding-right:20px;border-top:1px solid #ddd;color:#888;}
+.newslistpagebox .div{ position:absolute;right:0;top:3px; line-height:34px;}
+select.select_newspage{display:inline;width:60px;padding:5px; float:left;margin:0 3px;}
+.newslistpagebox span{margin:0 3px; float:left;line-height:34px; display:block;padding:0 3px;}
+.newslistpagebox a{margin:0 3px; float:left; line-height:34px; display:block;padding:0 3px;}
+.newslistpagebox b{ }
+.newslistpagebox .nowpage{color:#06C;}
+.newslistpagebox .allpage{font-weight:normal;color:#666;}
+.newwlistrtabbox{ position:absolute;right:20px;top:12px;}
+.newwlistrtabbox li{ float:left;padding:0 8px; margin-left:-1px; display:block; line-height:26px;border:1px solid #ddd; cursor:default;height:28px;border-bottom:none;}
+.newwlistrtabbox li.cur{ background:#fff;height:32px;margin-top:-4px; line-height:32px; color:#06C;border-top:2px solid #06c;
+     -moz-border-radius:3px 3px 0 0;
+	 -webkit-border-radius:3px 3px 0 0;
+	  border-radius:3px 3px 0 0;
+	  behavior:url(/ie-css3.htc);
+}
+.newwlistrtabbox li:hover{color:#09C;}
+
+.newslistulbox li{height:32px; line-height:32px; overflow:hidden;border-bottom:1px dotted #eee;padding:0 10px;}
+.newslistulbox li a{ float:left;color:#666;}
+.newslistulbox li.noread a{ font-weight:bold;color:#444;}
+.newslistulbox li a:hover{color:#06C;}
+.newslistulbox li a i{margin-right:5px;}
+.newslistulbox li .time{ float:right;color:#999;font-size:12px;}
+.newslistulbox li:hover{ background:#f8f8f8}
+
+
+@media screen and (max-height: 1000px){
+	html,body{min-width:200px; overflow:auto;}
+}

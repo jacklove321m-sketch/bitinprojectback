@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0" />
+<title>{$pagemodel}-{$Think.const.SITE_NAME}管理后台</title>
+<link rel="stylesheet" href="/static/eleui/index.css"/>
+<link rel="stylesheet" href="/static/eleui/diy.css"/>
+
+</head>
+<body>
+<div id="app" v-show="comm.pageloadcomplete" style="display: none;">
+	<div class="el-container is-vertical">
+		<header class="el-header" style="height: 60px;">
+			<div class="clearfix">
+			  <div class="logo fl"><i class="el-icon-magic-stick fl"></i><span class="fl">{$Think.const.SITE_NAME}管理后台</span></div>
+			  <div class="fr" style="padding-top: 16px;">
+					  <el-dropdown  trigger="click" @command="comm.topRcommandClick"> 
+						<span class="el-dropdown-link">
+						  {$Think.session.adminName}<i class="el-icon-arrow-down el-icon--right"></i>
+						</span>
+						<el-dropdown-menu slot="dropdown">
+						  <el-dropdown-item icon="el-icon-edit-outline" command="uppass">修改密码</el-dropdown-item>
+						  <el-dropdown-item icon="el-icon-right" command="loginout">安全退出</el-dropdown-item>
+						</el-dropdown-menu>
+					  </el-dropdown>
+			  </div>
+		  </div>
+		</header>
+		<el-container>
+			<el-aside width="240px" class="leftmenu">
+				<el-menu
+					class="el-menu-vertical-demo"
+					@open="comm.handleOpen"
+					@close="comm.handleClose"
+					:default-active="menuActive"
+					:default-openeds="menuAOpeneds"
+					@select="comm.leftnavclick"
+					>
+					<el-submenu index="1">
+						<template slot="title"><i class="el-icon-user"></i><span>会员管理</span></template>
+						<el-menu-item index="101">会员列表</el-menu-item>
+						<el-menu-item index="102">充值记录</el-menu-item>
+						<el-menu-item index="103">统计报表</el-menu-item>
+					  </el-submenu>
+					  <el-submenu index="8">
+						<template slot="title"><i class="el-icon-setting"></i><span>系统设置</span></template>
+						<el-menu-item index="8001">地区管理</el-menu-item>
+						<el-menu-item index="801">分类管理</el-menu-item>
+						<el-menu-item index="802">内容管理</el-menu-item>
+						<el-menu-item index="803">模板管理</el-menu-item>
+						<el-menu-item index="8005">角色管理</el-menu-item>
+						<el-menu-item index="8006">管理员管理</el-menu-item>
+						<el-menu-item index="8004">系统设置</el-menu-item>
+					</el-submenu>
+				</el-menu>
+			</el-aside>
+	<el-main>
+  
+<!--head end --> 

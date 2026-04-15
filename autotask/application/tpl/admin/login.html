@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>管理员登录_{$Think.const.SITE_NAME}</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <link rel="stylesheet" href="/static/eleui/index.css"/>
+	<link rel="stylesheet" href="/static/eleui/diy.css"/>
+</head>
+<body class="admin_login_body">
+<div id="app">
+	<div class="admin_loginbox">
+		<el-form :model="loginForm" ref="loginForm" :rules="rule_login" label-width="0" class="demo-ruleForm">
+			<div class="cctit">管理员登录</div>
+			<el-form-item label="" prop="a_name">
+			    <el-input type="text" v-model="loginForm.a_name" autocomplete="off" prefix-icon="el-icon-user" placeholder="登录账号"></el-input>
+			</el-form-item>
+			<el-form-item label="" prop="pwd">
+			    <el-input type="password" v-model="loginForm.pwd" autocomplete="off" show-password prefix-icon="el-icon-lock"  placeholder="登录密码"></el-input>
+			</el-form-item>
+			<el-form-item label="" prop="codeimg">
+				<el-col :span="12">
+					<el-input type="text" v-model="loginForm.codeimg" autocomplete="off"  prefix-icon="el-icon-check"  placeholder="验证码"></el-input>
+				</el-col>
+				<el-col :span="10" :offset="2">
+					<img :src="captcha" class="admin_captcha" rel="admin_captcha" class="yzmimg" id="code" @click="getcode"/>
+				</el-col>
+			</el-form-item>
+			<el-form-item label="" class="adminlogin_btnbox">
+			    <el-button type="primary" @click="loginGo" v-if="!isthislogin">登　　录</el-button>
+				<el-button type="primary" v-else>登　　录</el-button>
+			</el-form-item>
+		</el-form>
+	</div>
+   <div class="loginbtxt"></div>
+</div>
+<script src="/static/vue/jquery-1.9.0.min.js"></script>
+<script src="/static/vue/vue.min.js"></script>
+<script src="/static/eleui/admin.js"></script>
+<script src="/static/vue/comm.js"></script>
+<script>
+	var app=new Vue({
+		el:"#app",
+		data:{
+			loginForm:{
+				a_name:'',
+				pwd:'',
+				codeimg:''
+			},
+			captcha:"/captcha/captcha",
+			rule_login:{
+				
+			},
+			isthislogin:false
+		},
+		created: function() {
+			var that=this;
+			
+		},
+	    methods: {
+			init:function(){
+				
+			},
+			loginGo:function(){
+				this.isthislogin=true;
+				var arg={
+					"a_name":comm.sTrim(this.loginForm.a_name),
+					"pwd":comm.sTrim(this.loginForm.pwd),
+					"codeimg":comm.sTrim(this.loginForm.codeimg),
+				}
+				//adminlogin
+				$.ajax({
+						url: "/admin/admin/adminlogin", 
+						type: 'post',
+						dataType: "json",
+						contentType: "application/json",
+						data:JSON.stringify(arg),
+						success: function(data) {
+							this.$message.success("登录成功");
+							setTimeout(function () {
+								window.location.href="/admin/admin";
+							}, 3000)
+						}.bind(this),
+						error:function(res){
+							//this.$message.error(JSON.parse(res.responseText).msg);
+							this.getcode();
+							this.isthislogin=false;
+						}.bind(this)
+					})
+			},
+			getcode:function(){
+				this.captcha="/captcha/captcha?t="+new Date().getTime();
+			},
+			searchdata:function(){
+				var arg={
+					cs:null
+				}
+				$.ajax({
+						  url: "/api/getlist",
+						  type: "get",
+						  dataType: "json",
+						  contentType: "application/json",
+						  data:arg,
+						  success: function(data) {
+							//$(".datalist").append(data.data)
+							
+							this.alllists=this.alllists.concat(data.data);
+						   }.bind(this)
+					});
+			},
+		}
+	})
+</script>
+</body>
+</html>

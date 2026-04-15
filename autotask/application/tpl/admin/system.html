@@ -1,0 +1,85 @@
+{include file="../application/admin/view/inc/head.html" /}
+<div class="mainconbox">  
+  <div class="Breadcrumbs">
+    <span class="ico fa fa-home"></span><a href="/okadmin">系统首页</a><i class="i fa fa-angle-right"></i><span class="active">系统设置</span>
+  </div>
+  <!--面包屑 END -->
+  <!--数据加载中的样式<div class="loadingbox"></div> -->
+  <div class="col-sm-12 clearfix">
+    <!--面包屑 -->
+
+  <!--面包屑 END -->
+  <!--数据加载中的样式<div class="loadingbox"></div> -->
+  <div class="qc8"></div>
+  <div class="lmtab">
+        <div class="f-l txt">基本设置</div>       
+        <div class="qc"></div>
+      </div>
+  <div class="qc8"></div>
+     <div class="col-sm-12">
+        <div class="form-horizontal">        
+        <div class="form-group">
+            <label class="col-sm-1 control-label no-padding-right"><span class="red">*</span>网站名称</label>
+            <div class="col-sm-2"><input name="site_name" type="text" class="form-control" id="site_name" value="{$site_name}"></div>
+			<label class="col-sm-1 control-label no-padding-right">域名</label>
+			<div class="col-sm-2"><input name="domain_name" type="text" class="form-control" id="domain_name" value="{$domain_name}"></div>
+			<label class="col-sm-1 control-label no-padding-right"><span class="red">*</span>预约收费</label>
+			<div class="col-sm-2">
+				<div class="input-group">
+					<input name="yuyuefee" type="text" class="form-control" id="yuyuefee" value="{$yuyuefee}">
+					<span class="input-group-addon">元 / 次</span>
+				</div>
+				
+				</div>
+        </div>
+		<div class="qc8"></div>
+		
+		<div class="qc8"></div>
+		
+        
+          <div class="h-20"></div>
+        <div class="form-group">
+            <div class="col-sm-12" style="text-align: center;">
+               <a href="javascript:;" class="btn btn-info" type="button" onclick="saveok();"><i class="fa fa-save"></i> 保 存</a>
+           </div>
+            
+        </div>
+        
+        </div>
+     </div>
+  </div>
+</div>
+
+
+
+  <!-- -->
+
+<script>topnavid="1";tonavjs();l_navid="1";lenavjs();/*头部，左部菜单选中样式*/</script>
+<script>
+function saveok(){
+	
+	var arg={
+		
+		"site_name":trim($("#site_name").val()),
+		"domain_name":trim($("#domain_name").val()),
+		"yuyuefee":trim($("#yuyuefee").val()),
+	}
+	
+	$.ajax({
+			  url: "/okadmin/systemup",
+			  type: "put",
+			  dataType: "json",
+			  contentType: "application/json",
+			  data: JSON.stringify(arg),
+			  success: function(data) {
+					diytipshow('ok',data.msg);
+			   },error:function(err){
+					diytipshow('err',JSON.parse(err.responseText).msg);
+				 }
+			});
+}
+ 
+</script>
+
+</body>
+</html>

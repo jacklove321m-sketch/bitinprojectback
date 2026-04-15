@@ -1,0 +1,241 @@
+{include file="../application/admin/view/inc/head.html" /}
+<el-breadcrumb separator="/">
+  <el-breadcrumb-item><i class="el-icon-s-home"></i><a href="/okadmin">系统首页</a></el-breadcrumb-item>
+  <el-breadcrumb-item><a href="/okadmin/poems">古诗管理</a></el-breadcrumb-item>
+  <el-breadcrumb-item>{$pagemodel}</el-breadcrumb-item>
+  <div class="fr">
+	  <div class="fl"><el-input type="text" v-model="cai_id" size="mini" placeholder="目标ID"></el-input></div>
+	  <div class="fl"><el-button type="warning" size="mini" @click="caiji">采集</el-button></div>
+  </div>
+</el-breadcrumb>
+<el-form :model="one" ref="one" :rules="ruleOne" label-width="72px" class="editoneshi">
+	<el-col :span="12">
+		<el-form-item label="标题" prop="title">
+		    <el-input type="text" v-model="one.title" size="mini" placeholder="标题"></el-input>
+		</el-form-item>
+		<el-row>
+			<el-col :span="12">
+				<el-form-item label="朝代" prop="author">
+				   <el-select v-model="one.dynastyid" size="mini" placeholder="朝代">
+				   	<el-option v-for="item in comm.chaodais" :value="item.value" :key="item.value" :label="item.label"></el-option>
+				   </select>
+				</el-form-item>
+			</el-col>
+			<el-col :span="12">
+				<el-form-item label="作者" prop="author">
+				    <el-input type="text" v-model="one.author" size="mini" placeholder="作者姓名"></el-input>
+				</el-form-item>
+			</el-col>
+			<el-col :span="12">
+				<el-form-item label="年级" prop="title">
+				   <el-cascader :options="comm.gradetypes" v-model="one.gradeTaID" placeholder="年级" size="mini" clearable></el-cascader>
+				</el-form-item>
+			</el-col>
+			<el-col :span="12">
+				<el-form-item label="诗集" prop="title">
+					<el-select v-model="one.groupid" size="mini" placeholder="诗集" clearable>
+						<el-option v-for="item in comm.groupids" :value="item.value" :key="item.value" :label="item.label"></el-option>
+					</select>
+				</el-form-item>
+			</el-col>
+		</el-row>
+		<el-form-item label="详情" prop="contents">
+		    <el-input type="textarea" v-model="one.contents" size="mini" placeholder="详情" rows="27"></el-input>
+		</el-form-item>
+		
+		
+	</el-col>
+	<el-col :span="12">
+		<el-form-item label="翻译" prop="yi">
+		    <el-input type="textarea" v-model="one.yi" size="mini" placeholder="翻译" rows="11"></el-input>
+		</el-form-item>
+		<el-form-item label="注释" prop="zhu">
+		    <el-input type="textarea" v-model="one.zhu" size="mini" placeholder="注释" rows="11"></el-input>
+		</el-form-item>
+		<el-form-item label="赏析" prop="shang">
+		    <el-input type="textarea" v-model="one.shang" size="mini" placeholder="赏析" rows="11"></el-input>
+		</el-form-item>
+	</el-col>
+	<el-col :span="24" style="text-align: center;">
+		<el-form-item label=" " prop="title">
+			<el-button type="primary" @click="saveto">保存</el-button>
+			<span style="padding:0 100px 0 0;"></span><el-button type="danger" @click="next({$id+1})">保存并下一首</el-button>
+		</el-form-item>
+	</el-col>
+</el-form>
+{include file="../application/admin/view/inc/foot.html" /}
+<script>
+	var app=new Vue({
+			el:"#app",
+			data:{
+				menuActive:"101",
+				menuAOpeneds:[],
+				nowtimes:"23",
+				one:{
+					title:'',
+					gradeTaID:[],//根据学段，年级重新组成数组
+					gradetype:null,
+					gradeid:null,
+					dynastyid:null,
+					dynasty:'',
+					groupid:null,
+					author:"",
+					contents:"",
+					remark1:"",
+					remark2:"",
+					remark2:"",
+					yi:'[]',
+					zhu:'[]',
+					shang:'[]'
+				},
+				id:null,
+				ruleOne:{
+					title:[
+						
+					]
+				},
+				cai_id:null
+			},
+			created: function() {
+				var that=this;
+				{if $id}
+					this.id={$id};
+					this.getone();
+				{/if}
+			},
+		    methods: {
+				init:function(){
+					
+				},
+				getone:function(){
+					$.ajax({
+					  url: "/okadmin/oneshi?id="+{$id},
+					  type: "get",
+					  dataType: "json",
+					  contentType: "application/json",
+					  data:"",
+					  success: function(data) {
+							this.one=data.data;
+							if(!this.one.yi)this.one.yi='[]';
+							if(!this.one.zhu)this.one.zhu='[]';
+							if(!this.one.shang)this.one.shang='[]';
+							//console.log(JSON.stringify(data.data))
+					   }.bind(this),
+					   error:function(err){
+						   
+						}.bind(this)
+					});
+				},
+				caiji:function(){
+					$.ajax({
+					  url: "/okadmin/caiji?id="+this.cai_id,
+					  type: "get",
+					  dataType: "json",
+					  contentType: "application/json",
+					  data:"",
+					  success: function(data) {
+							this.one.yi=JSON.stringify(data.yi);
+							this.one.zhu=JSON.stringify(data.zhu);
+							this.one.shang=JSON.stringify(data.shang);
+							
+					   }.bind(this),
+					   error:function(err){
+						   
+						}.bind(this)
+					});
+				},
+				next:function(id){
+					if(id){
+						$.ajax({
+						  url: "/okadmin/saveshi?id="+this.id,
+						  type: "patch",
+						  dataType: "json",
+						  contentType: "application/json",
+						  data:JSON.stringify(this.one),
+						  success: function(data) {
+								this.$message.success("修改成功");
+								$.ajax({
+								  url: "/okadmin/getnext?id="+this.id,
+								  type: "get",
+								  dataType: "json",
+								  contentType: "application/json",
+								  data:"",
+								  success: function(data) {
+										window.location.href="/okadmin/poetry/"+data.id;
+								   }.bind(this),
+								   error:function(err){
+									   
+									}.bind(this)
+								});
+						   }.bind(this),
+						   error:function(err){
+							   
+							}.bind(this)
+						});
+					}else{
+						
+					}
+				},
+				saveto:function(){
+					var id=this.id;
+					if(id){
+						$.ajax({
+						  url: "/okadmin/saveshi?id="+this.id,
+						  type: "patch",
+						  dataType: "json",
+						  contentType: "application/json",
+						  data:JSON.stringify(this.one),
+						  success: function(data) {
+								this.$message.success("修改成功");
+						   }.bind(this),
+						   error:function(err){
+							   
+							}.bind(this)
+						});
+					}else{
+						
+					}
+				},
+				uppassSub:function(formName){
+					this.$refs[formName].validate((valid) => {
+					  if (valid) {
+						var old=comm.sTrim(comm.uppassForm.oldpass)
+						var newp=comm.sTrim(comm.uppassForm.newpass)
+						var renewp=comm.sTrim(comm.uppassForm.repass)
+						var query={
+								password:old,
+								newPassword:newp
+							};
+							$.ajax({
+									  url: "/okadmin/uppass",
+									  type: "post",
+									  dataType: "json",
+									  contentType: "application/json",
+									  data:JSON.stringify(query),
+									  success: function(data) {
+										comm.uppassForm.newpass="";
+										comm.uppassForm.oldpass="";
+										comm.uppassForm.renewpass="";
+										comm.uppassForm=false;
+										this.$message.success("密码修改成功。请使用新密码重新登录！");
+										setTimeout(function () {
+											window.location.href="/okadmin/loginout";
+										}, 3000)
+								   }.bind(this),
+								   error:function(err){
+									   this.$message.error(JSON.parse(err.responseText).msg);
+									}.bind(this)
+								});
+					  } else {
+						return false;
+					  }
+					});
+							
+				},
+				
+				
+			}
+		})
+</script>
+</body>
+</html>
