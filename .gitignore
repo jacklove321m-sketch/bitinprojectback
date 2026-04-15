@@ -9,7 +9,7 @@
 # public/vendor/
 
 # Local tools / downloads
-composer
+#composer
 wget-log
 
 # Logs / runtime / cache
