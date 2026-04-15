@@ -3,10 +3,10 @@
 .env.*
 
 # Dependencies
-vendor/
-nodejs/node_modules/
-autotask/vendor/
-public/vendor/
+# vendor/
+# nodejs/node_modules/
+# autotask/vendor/
+# public/vendor/
 
 # Local tools / downloads
 composer
@@ -19,9 +19,9 @@ storage/framework/sessions/*
 storage/framework/views/*
 storage/framework/testing/*
 storage/debugbar/*
-bootstrap/cache/*.php
-bootstrap/cache/packages.php
-bootstrap/cache/services.php
+# bootstrap/cache/*.php
+# bootstrap/cache/packages.php
+# bootstrap/cache/services.php
 autotask/runtime/*
 !autotask/runtime/.gitignore
 
@@ -32,18 +32,18 @@ public/json/upload/**
 autotask/public/upload/**
 
 # Public static assets, images, and bundled dependencies
-public/static/
-public/admin/
-public/agents/
-public/layui/
-public/layuiadmin/
-public/manages/
+# public/static/
+# public/admin/
+# public/agents/
+# public/layui/
+# public/layuiadmin/
+# public/manages/
 
 # Public temporary / generated files
-public/recharge_data.txt
-public/t.txt
-public/*.mobileconfig
-public/*.ttf
+# public/recharge_data.txt
+# public/t.txt
+# public/*.mobileconfig
+# public/*.ttf
 
 # Maps / archives
 public/**/*.map
