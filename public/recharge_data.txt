@@ -1,0 +1,354 @@
+
+2025-02-13 00:35:13{"attributes":{},"request":{},"query":{},"server":{},"files":{},"cookies":{},"headers":{}}
+
+{"timestamp":"1739374512884","nonce":"pIjWMt","sign":"76e7b093ec29d22c10564cd9308ac24f","body":"{\"address\":\"TYa2sXvx2nye7DVwzHsKrcZWKYJSYq5YH5\",\"amount\":\"1000000\",\"blockHigh\":\"69574144\",\"coinType\":\"TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t\",\"decimals\":\"6\",\"fee\":\"345000\",\"mainCoinType\":\"195\",\"memo\":\"\",\"status\":3,\"tradeId\":\"1339379310514921472\",\"tradeType\":1,\"txId\":\"d4186c01bc8b4a4512921be5f5c5b47711399e5f86251c7763dee39a952b0a93\"}"}
+
+body: {"address":"TYa2sXvx2nye7DVwzHsKrcZWKYJSYq5YH5","amount":"1000000","blockHigh":"69574144","coinType":"TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t","decimals":"6","fee":"345000","mainCoinType":"195","memo":"","status":3,"tradeId":"1339379310514921472","tradeType":1,"txId":"d4186c01bc8b4a4512921be5f5c5b47711399e5f86251c7763dee39a952b0a93"}
+
+2025-02-13 00:35:13TYa2sXvx2nye7DVwzHsKrcZWKYJSYq5YH5: 验证签名成功
+
+2025-02-13 00:35:13充币回调成功
+
+2025-02-13 00:35:13交易成功
+
+2025-02-13 00:35:13获取用户地址成功
+
+2025-02-13 00:35:13获取用户成功:94972209
+
+用户:94972209 address:TYa2sXvx2nye7DVwzHsKrcZWKYJSYq5YH5，U盾充值：1
+
+2025-02-13 01:03:19{"attributes":{},"request":{},"query":{},"server":{},"files":{},"cookies":{},"headers":{}}
+
+{"timestamp":"1739376199767","nonce":"SfKg5A","sign":"88d936ae6460dcebd9fa03a2fce8066d","body":"{\"address\":\"0x2008838d9350a2a21e0ae0afa1342fca28f9438f\",\"amount\":\"1000000\",\"blockHigh\":\"21831463\",\"coinType\":\"0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48\",\"decimals\":\"6\",\"fee\":\"219346609673192\",\"mainCoinType\":\"60\",\"memo\":\"\",\"status\":3,\"tradeId\":\"1339386388914626560\",\"tradeType\":1,\"txId\":\"0xec0e4b1b425b856bd4602029a0c59e02304b43b68eebcb57deff3a11653479ef\"}"}
+
+body: {"address":"0x2008838d9350a2a21e0ae0afa1342fca28f9438f","amount":"1000000","blockHigh":"21831463","coinType":"0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48","decimals":"6","fee":"219346609673192","mainCoinType":"60","memo":"","status":3,"tradeId":"1339386388914626560","tradeType":1,"txId":"0xec0e4b1b425b856bd4602029a0c59e02304b43b68eebcb57deff3a11653479ef"}
+
+2025-02-13 01:03:190x2008838d9350a2a21e0ae0afa1342fca28f9438f: 验证签名成功
+
+2025-02-13 01:03:19充币回调成功
+
+2025-02-13 01:03:19交易成功
+
+2025-02-13 01:03:19获取用户地址成功
+
+2025-02-13 01:03:19获取用户成功:94972209
+
+用户:94972209 address:0x2008838d9350a2a21e0ae0afa1342fca28f9438f，U盾充值：1
+
+2025-02-14 00:28:53{"attributes":{},"request":{},"query":{},"server":{},"files":{},"cookies":{},"headers":{}}
+
+{"timestamp":"1739460532948","nonce":"Mx0nsD","sign":"4166d51d6975b820657fc866d151ab17","body":"{\"address\":\"0x19c96e5d46fae184673bec031fef439475850946\",\"amount\":\"1000000\",\"blockHigh\":\"21838446\",\"coinType\":\"0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48\",\"decimals\":\"6\",\"fee\":\"383016485800824\",\"mainCoinType\":\"60\",\"memo\":\"\",\"status\":3,\"tradeId\":\"1339740105912344576\",\"tradeType\":1,\"txId\":\"0x552e1815f4f4933e28da88419c40520fd265e49c276beb578797c9bc96d6dc43\"}"}
+
+body: {"address":"0x19c96e5d46fae184673bec031fef439475850946","amount":"1000000","blockHigh":"21838446","coinType":"0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48","decimals":"6","fee":"383016485800824","mainCoinType":"60","memo":"","status":3,"tradeId":"1339740105912344576","tradeType":1,"txId":"0x552e1815f4f4933e28da88419c40520fd265e49c276beb578797c9bc96d6dc43"}
+
+2025-02-14 00:28:530x19c96e5d46fae184673bec031fef439475850946: 验证签名成功
+
+2025-02-14 00:28:53充币回调成功
+
+2025-02-14 00:28:53交易成功
+
+2025-02-14 00:28:53获取用户地址成功
+
+2025-02-14 00:28:53获取用户成功:75088054
+
+用户:75088054 address:0x19c96e5d46fae184673bec031fef439475850946，U盾充值：1
+
+2025-02-14 17:39:04{"attributes":{},"request":{},"query":{},"server":{},"files":{},"cookies":{},"headers":{}}
+
+{"timestamp":"1739522344558","nonce":"DuFUhU","sign":"aa9a025feae24d564014cd913e24071d","body":"{\"address\":\"0x180de449edb2ad695c5257ada115f56f5c8e54af\",\"amount\":\"1000000\",\"blockHigh\":\"21843559\",\"coinType\":\"0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48\",\"decimals\":\"6\",\"fee\":\"201929465458384\",\"mainCoinType\":\"60\",\"memo\":\"\",\"status\":3,\"tradeId\":\"1339999364122140672\",\"tradeType\":1,\"txId\":\"0x6da2e87efb57686fda654e2856faba7825ebc2774da39befc06dd942bfe4c4dd\"}"}
+
+body: {"address":"0x180de449edb2ad695c5257ada115f56f5c8e54af","amount":"1000000","blockHigh":"21843559","coinType":"0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48","decimals":"6","fee":"201929465458384","mainCoinType":"60","memo":"","status":3,"tradeId":"1339999364122140672","tradeType":1,"txId":"0x6da2e87efb57686fda654e2856faba7825ebc2774da39befc06dd942bfe4c4dd"}
+
+2025-02-14 17:39:040x180de449edb2ad695c5257ada115f56f5c8e54af: 验证签名成功
+
+2025-02-14 17:39:04充币回调成功
+
+2025-02-14 17:39:04交易成功
+
+2025-02-14 17:39:04获取用户地址成功
+
+2025-02-14 17:39:04获取用户成功:75088054
+
+用户:75088054 address:0x180de449edb2ad695c5257ada115f56f5c8e54af，U盾充值：1
+
+2025-02-14 17:43:55{"attributes":{},"request":{},"query":{},"server":{},"files":{},"cookies":{},"headers":{}}
+
+{"timestamp":"1739522635481","nonce":"XhFMvI","sign":"ddc14440900fe4d1b4137a23480556ae","body":"{\"address\":\"THjzN7aWctdvCCc88ZDbTtnpRAVJFGF61k\",\"amount\":\"2000000\",\"blockHigh\":\"69623507\",\"coinType\":\"TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t\",\"decimals\":\"6\",\"fee\":\"0\",\"mainCoinType\":\"195\",\"memo\":\"\",\"status\":3,\"tradeId\":\"1340000584496832512\",\"tradeType\":1,\"txId\":\"e82936d99ac43f047aecbce9761129da26910cfaf7fe0bfe8577002c0ec56de1\"}"}
+
+body: {"address":"THjzN7aWctdvCCc88ZDbTtnpRAVJFGF61k","amount":"2000000","blockHigh":"69623507","coinType":"TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t","decimals":"6","fee":"0","mainCoinType":"195","memo":"","status":3,"tradeId":"1340000584496832512","tradeType":1,"txId":"e82936d99ac43f047aecbce9761129da26910cfaf7fe0bfe8577002c0ec56de1"}
+
+2025-02-14 17:43:55THjzN7aWctdvCCc88ZDbTtnpRAVJFGF61k: 验证签名成功
+
+2025-02-14 17:43:55充币回调成功
+
+2025-02-14 17:43:55交易成功
+
+2025-02-14 17:43:55获取用户地址成功
+
+2025-02-14 17:43:55获取用户成功:75088054
+
+用户:75088054 address:THjzN7aWctdvCCc88ZDbTtnpRAVJFGF61k，U盾充值：2
+
+2025-02-14 17:49:05{"attributes":{},"request":{},"query":{},"server":{},"files":{},"cookies":{},"headers":{}}
+
+{"timestamp":"1739522945491","nonce":"7HZoDn","sign":"5ecc207206e432af0d8e8435e44c571d","body":"{\"address\":\"0x180de449edb2ad695c5257ada115f56f5c8e54af\",\"amount\":\"2000000\",\"blockHigh\":\"21843608\",\"coinType\":\"0xdac17f958d2ee523a2206206994597c13d831ec7\",\"decimals\":\"6\",\"fee\":\"193487103960777\",\"mainCoinType\":\"60\",\"memo\":\"\",\"status\":3,\"tradeId\":\"1340001883212734464\",\"tradeType\":1,\"txId\":\"0x26fc9513bb8208e1cfa8516a4023f3a32fd20738acaf8e0d4c1dd56a161ee052\"}"}
+
+body: {"address":"0x180de449edb2ad695c5257ada115f56f5c8e54af","amount":"2000000","blockHigh":"21843608","coinType":"0xdac17f958d2ee523a2206206994597c13d831ec7","decimals":"6","fee":"193487103960777","mainCoinType":"60","memo":"","status":3,"tradeId":"1340001883212734464","tradeType":1,"txId":"0x26fc9513bb8208e1cfa8516a4023f3a32fd20738acaf8e0d4c1dd56a161ee052"}
+
+2025-02-14 17:49:050x180de449edb2ad695c5257ada115f56f5c8e54af: 验证签名成功
+
+2025-02-14 17:49:05充币回调成功
+
+2025-02-14 17:49:05交易成功
+
+2025-02-14 17:49:05获取用户地址成功
+
+2025-02-14 17:49:05获取用户成功:75088054
+
+用户:75088054 address:0x180de449edb2ad695c5257ada115f56f5c8e54af，U盾充值：2
+
+2025-03-02 21:29:50{"attributes":{},"request":{},"query":{},"server":{},"files":{},"cookies":{},"headers":{}}
+
+{"timestamp":null,"nonce":null,"sign":null,"body":null}
+
+body: 
+
+2025-03-02 21:29:50签名验证失败
+
+2025-03-03 03:20:34{"attributes":{},"request":{},"query":{},"server":{},"files":{},"cookies":{},"headers":{}}
+
+{"timestamp":null,"nonce":null,"sign":null,"body":null}
+
+body: 
+
+2025-03-03 03:20:34签名验证失败
+
+2025-03-03 03:20:44{"attributes":{},"request":{},"query":{},"server":{},"files":{},"cookies":{},"headers":{}}
+
+{"timestamp":null,"nonce":null,"sign":null,"body":null}
+
+body: 
+
+2025-03-03 03:20:44签名验证失败
+
+2025-03-03 03:22:35{"attributes":{},"request":{},"query":{},"server":{},"files":{},"cookies":{},"headers":{}}
+
+{"timestamp":null,"nonce":null,"sign":null,"body":null}
+
+body: 
+
+2025-03-03 03:22:35签名验证失败
+
+2025-03-03 20:37:10{"attributes":{},"request":{},"query":{},"server":{},"files":{},"cookies":{},"headers":{}}
+
+{"timestamp":"1741001829746","nonce":"VdPzmO","sign":"a29f888583bf38f346c285a01f6a3150","body":"{\"address\":\"TEMEnGN9gAh9by7p7a4LGmqBqRCKkutcV9\",\"amount\":\"10000000\",\"blockHigh\":\"70116383\",\"coinType\":\"TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t\",\"decimals\":\"6\",\"fee\":\"0\",\"mainCoinType\":\"195\",\"memo\":\"\",\"status\":3,\"tradeId\":\"1346204775166763008\",\"tradeType\":1,\"txId\":\"e3a930d171f8c4aaf9f9cc404c2889030eabbc4f9557c37b87eb593b38f8055b\"}"}
+
+body: {"address":"TEMEnGN9gAh9by7p7a4LGmqBqRCKkutcV9","amount":"10000000","blockHigh":"70116383","coinType":"TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t","decimals":"6","fee":"0","mainCoinType":"195","memo":"","status":3,"tradeId":"1346204775166763008","tradeType":1,"txId":"e3a930d171f8c4aaf9f9cc404c2889030eabbc4f9557c37b87eb593b38f8055b"}
+
+2025-03-03 20:37:10TEMEnGN9gAh9by7p7a4LGmqBqRCKkutcV9: 验证签名成功
+
+2025-03-03 20:37:10充币回调成功
+
+2025-03-03 20:37:10交易成功
+
+2025-03-03 20:37:10获取用户地址成功
+
+2025-03-03 20:37:10获取用户成功:70834449
+
+用户:70834449 address:TEMEnGN9gAh9by7p7a4LGmqBqRCKkutcV9，U盾充值：10
+
+2025-03-03 20:44:29{"attributes":{},"request":{},"query":{},"server":{},"files":{},"cookies":{},"headers":{}}
+
+{"timestamp":"1741002268712","nonce":"uRfS9a","sign":"d1e70c702616b6593160b3ab76eb1572","body":"{\"address\":\"TEMEnGN9gAh9by7p7a4LGmqBqRCKkutcV9\",\"amount\":\"10000000\",\"blockHigh\":\"70116536\",\"coinType\":\"TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t\",\"decimals\":\"6\",\"fee\":\"0\",\"mainCoinType\":\"195\",\"memo\":\"\",\"status\":3,\"tradeId\":\"1346206611240116224\",\"tradeType\":1,\"txId\":\"aea433b29d0f81d2db31dbc197db3997de3e80ea084d83571722aee9ff3a7dfc\"}"}
+
+body: {"address":"TEMEnGN9gAh9by7p7a4LGmqBqRCKkutcV9","amount":"10000000","blockHigh":"70116536","coinType":"TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t","decimals":"6","fee":"0","mainCoinType":"195","memo":"","status":3,"tradeId":"1346206611240116224","tradeType":1,"txId":"aea433b29d0f81d2db31dbc197db3997de3e80ea084d83571722aee9ff3a7dfc"}
+
+2025-03-03 20:44:29TEMEnGN9gAh9by7p7a4LGmqBqRCKkutcV9: 验证签名成功
+
+2025-03-03 20:44:29充币回调成功
+
+2025-03-03 20:44:29交易成功
+
+2025-03-03 20:44:29获取用户地址成功
+
+2025-03-03 20:44:29获取用户成功:70834449
+
+用户:70834449 address:TEMEnGN9gAh9by7p7a4LGmqBqRCKkutcV9，U盾充值：10
+
+2025-03-05 20:08:30{"attributes":{},"request":{},"query":{},"server":{},"files":{},"cookies":{},"headers":{}}
+
+{"timestamp":"1741172910131","nonce":"CKAIXK","sign":"3d229a4f645aec59f278e64ada2226cd","body":"{\"address\":\"TEMEnGN9gAh9by7p7a4LGmqBqRCKkutcV9\",\"amount\":\"375000\",\"blockHigh\":\"70173399\",\"coinType\":\"195\",\"decimals\":\"6\",\"fee\":\"0\",\"mainCoinType\":\"195\",\"memo\":\"\",\"status\":3,\"tradeId\":\"1346922335948496896\",\"tradeType\":1,\"txId\":\"3306d1d52005b7914539b4487612bfe7b5f6ef1d591fcd345fbf4f4e5e498256\"}"}
+
+body: {"address":"TEMEnGN9gAh9by7p7a4LGmqBqRCKkutcV9","amount":"375000","blockHigh":"70173399","coinType":"195","decimals":"6","fee":"0","mainCoinType":"195","memo":"","status":3,"tradeId":"1346922335948496896","tradeType":1,"txId":"3306d1d52005b7914539b4487612bfe7b5f6ef1d591fcd345fbf4f4e5e498256"}
+
+2025-03-05 20:08:30TEMEnGN9gAh9by7p7a4LGmqBqRCKkutcV9: 验证签名成功
+
+2025-03-05 20:08:30充币回调成功
+
+2025-03-05 20:08:30交易成功
+
+2025-03-05 20:08:30获取用户地址成功
+
+2025-03-05 20:08:30获取用户成功:70834449
+
+用户:70834449 address:TEMEnGN9gAh9by7p7a4LGmqBqRCKkutcV9，U盾充值：0.375
+
+2025-03-08 07:16:29{"attributes":{},"request":{},"query":{},"server":{},"files":{},"cookies":{},"headers":{}}
+
+{"timestamp":null,"nonce":null,"sign":null,"body":null}
+
+body: 
+
+2025-03-08 07:16:29签名验证失败
+
+2025-03-09 23:23:52{"attributes":{},"request":{},"query":{},"server":{},"files":{},"cookies":{},"headers":{}}
+
+{"timestamp":"1741530232510","nonce":"cGeEXh","sign":"d79c85abda1ac24d279f7d76a1ca82dd","body":"{\"address\":\"0x8271eb13e8e75163066eb3ad6b31b4d9892ca34d\",\"amount\":\"303000000\",\"blockHigh\":\"22009878\",\"coinType\":\"0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48\",\"decimals\":\"6\",\"fee\":\"171264279225820\",\"mainCoinType\":\"60\",\"memo\":\"\",\"status\":3,\"tradeId\":\"1348421054304870400\",\"tradeType\":1,\"txId\":\"0x43f3b45dae84d1adb065b7b40b09442ca748f095caa79f6a4830d3ae166501b9\"}"}
+
+body: {"address":"0x8271eb13e8e75163066eb3ad6b31b4d9892ca34d","amount":"303000000","blockHigh":"22009878","coinType":"0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48","decimals":"6","fee":"171264279225820","mainCoinType":"60","memo":"","status":3,"tradeId":"1348421054304870400","tradeType":1,"txId":"0x43f3b45dae84d1adb065b7b40b09442ca748f095caa79f6a4830d3ae166501b9"}
+
+2025-03-09 23:23:520x8271eb13e8e75163066eb3ad6b31b4d9892ca34d: 验证签名成功
+
+2025-03-09 23:23:52充币回调成功
+
+2025-03-09 23:23:52交易成功
+
+2025-03-09 23:23:52获取用户地址成功
+
+2025-03-09 23:23:52获取用户成功:15421073
+
+用户:15421073 address:0x8271eb13e8e75163066eb3ad6b31b4d9892ca34d，U盾充值：303
+
+2025-03-10 00:42:06{"attributes":{},"request":{},"query":{},"server":{},"files":{},"cookies":{},"headers":{}}
+
+{"timestamp":"1741534926342","nonce":"f23Uav","sign":"53ae7dec3f6476f4cef94a4158f548e8","body":"{\"address\":\"0xbcfa46678baf670c918943c064defd817e9a919e\",\"amount\":\"267220000\",\"blockHigh\":\"22010266\",\"coinType\":\"0xdac17f958d2ee523a2206206994597c13d831ec7\",\"decimals\":\"6\",\"fee\":\"166128645730233\",\"mainCoinType\":\"60\",\"memo\":\"\",\"status\":3,\"tradeId\":\"1348440743865212928\",\"tradeType\":1,\"txId\":\"0x88d036c8ef573254e16046004a91bc4a9688a9f20eb824268ec7a35d378c998a\"}"}
+
+body: {"address":"0xbcfa46678baf670c918943c064defd817e9a919e","amount":"267220000","blockHigh":"22010266","coinType":"0xdac17f958d2ee523a2206206994597c13d831ec7","decimals":"6","fee":"166128645730233","mainCoinType":"60","memo":"","status":3,"tradeId":"1348440743865212928","tradeType":1,"txId":"0x88d036c8ef573254e16046004a91bc4a9688a9f20eb824268ec7a35d378c998a"}
+
+2025-03-10 00:42:060xbcfa46678baf670c918943c064defd817e9a919e: 验证签名成功
+
+2025-03-10 00:42:06充币回调成功
+
+2025-03-10 00:42:06交易成功
+
+2025-03-10 00:42:06获取用户地址成功
+
+2025-03-10 00:42:06获取用户成功:61258670
+
+用户:61258670 address:0xbcfa46678baf670c918943c064defd817e9a919e，U盾充值：267.22
+
+2025-03-14 23:35:29{"attributes":{},"request":{},"query":{},"server":{},"files":{},"cookies":{},"headers":{}}
+
+{"timestamp":"1741962929520","nonce":"HA5na9","sign":"429929591a7cb06d6452e9aea3c702c9","body":"{\"address\":\"0xbcfa46678baf670c918943c064defd817e9a919e\",\"amount\":\"647500000\",\"blockHigh\":\"22045739\",\"coinType\":\"0xdac17f958d2ee523a2206206994597c13d831ec7\",\"decimals\":\"6\",\"fee\":\"128753800682787\",\"mainCoinType\":\"60\",\"memo\":\"\",\"status\":3,\"tradeId\":\"1350235914953023488\",\"tradeType\":1,\"txId\":\"0xa3d2b8aa1f322a6fed74a9d8232928859832c2e5231705aa536085731c443c48\"}"}
+
+body: {"address":"0xbcfa46678baf670c918943c064defd817e9a919e","amount":"647500000","blockHigh":"22045739","coinType":"0xdac17f958d2ee523a2206206994597c13d831ec7","decimals":"6","fee":"128753800682787","mainCoinType":"60","memo":"","status":3,"tradeId":"1350235914953023488","tradeType":1,"txId":"0xa3d2b8aa1f322a6fed74a9d8232928859832c2e5231705aa536085731c443c48"}
+
+2025-03-14 23:35:290xbcfa46678baf670c918943c064defd817e9a919e: 验证签名成功
+
+2025-03-14 23:35:29充币回调成功
+
+2025-03-14 23:35:29交易成功
+
+2025-03-14 23:35:29获取用户地址成功
+
+2025-03-14 23:35:29获取用户成功:61258670
+
+用户:61258670 address:0xbcfa46678baf670c918943c064defd817e9a919e，U盾充值：647.5
+
+2025-03-24 19:57:57{"attributes":{},"request":{},"query":{},"server":{},"files":{},"cookies":{},"headers":{}}
+
+{"timestamp":"1742813877016","nonce":"5YeVgR","sign":"e80ba347bb3d6e864beec219bc68b3e3","body":"{\"address\":\"TT8N3sQfF3zrVGsfUZFrmWBQUsaLvZSfbm\",\"amount\":\"82870000\",\"blockHigh\":\"70720228\",\"coinType\":\"TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t\",\"decimals\":\"6\",\"fee\":\"0\",\"mainCoinType\":\"195\",\"memo\":\"\",\"status\":3,\"tradeId\":\"1353805044397367296\",\"tradeType\":1,\"txId\":\"6c40137fa4c5d115fab484bdc7114165d6945c93e841591af3b31b5f6dd439fb\"}"}
+
+body: {"address":"TT8N3sQfF3zrVGsfUZFrmWBQUsaLvZSfbm","amount":"82870000","blockHigh":"70720228","coinType":"TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t","decimals":"6","fee":"0","mainCoinType":"195","memo":"","status":3,"tradeId":"1353805044397367296","tradeType":1,"txId":"6c40137fa4c5d115fab484bdc7114165d6945c93e841591af3b31b5f6dd439fb"}
+
+2025-03-24 19:57:57TT8N3sQfF3zrVGsfUZFrmWBQUsaLvZSfbm: 验证签名成功
+
+2025-03-24 19:57:57充币回调成功
+
+2025-03-24 19:57:57交易成功
+
+2025-03-24 19:57:57获取用户地址成功
+
+2025-03-24 19:57:57获取用户成功:4265485
+
+用户:4265485 address:TT8N3sQfF3zrVGsfUZFrmWBQUsaLvZSfbm，U盾充值：82.87
+
+2025-03-29 10:22:04{"attributes":{},"request":{},"query":{},"server":{},"files":{},"cookies":{},"headers":{}}
+
+{"timestamp":"1743211324106","nonce":"GM3RQ7","sign":"fe3ec8ab16b2739aa6423dd34f807d9c","body":"{\"address\":\"TLJuSyp3Ez6ppd7df7iMczXVQ6po15wCPa\",\"amount\":\"50900000\",\"blockHigh\":\"70852666\",\"coinType\":\"TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t\",\"decimals\":\"6\",\"fee\":\"0\",\"mainCoinType\":\"195\",\"memo\":\"\",\"status\":3,\"tradeId\":\"1355472066181062656\",\"tradeType\":1,\"txId\":\"c85be010f7390dc1951e6016ec39db977ef23de58ed764525b72d8964c10131a\"}"}
+
+body: {"address":"TLJuSyp3Ez6ppd7df7iMczXVQ6po15wCPa","amount":"50900000","blockHigh":"70852666","coinType":"TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t","decimals":"6","fee":"0","mainCoinType":"195","memo":"","status":3,"tradeId":"1355472066181062656","tradeType":1,"txId":"c85be010f7390dc1951e6016ec39db977ef23de58ed764525b72d8964c10131a"}
+
+2025-03-29 10:22:04TLJuSyp3Ez6ppd7df7iMczXVQ6po15wCPa: 验证签名成功
+
+2025-03-29 10:22:04充币回调成功
+
+2025-03-29 10:22:04交易成功
+
+2025-03-29 10:22:04获取用户地址成功
+
+2025-03-29 10:22:04获取用户成功:83890672
+
+用户:83890672 address:TLJuSyp3Ez6ppd7df7iMczXVQ6po15wCPa，U盾充值：50.9
+
+2025-03-31 17:04:53{"attributes":{},"request":{},"query":{},"server":{},"files":{},"cookies":{},"headers":{}}
+
+{"timestamp":"1743408293165","nonce":"4L1mn7","sign":"efcc9265e5997d8072a3a506ac583d07","body":"{\"address\":\"0xbcfa46678baf670c918943c064defd817e9a919e\",\"amount\":\"413172000\",\"blockHigh\":\"22165580\",\"coinType\":\"0xdac17f958d2ee523a2206206994597c13d831ec7\",\"decimals\":\"6\",\"fee\":\"160639977168129\",\"mainCoinType\":\"60\",\"memo\":\"\",\"status\":3,\"tradeId\":\"1356298213799223296\",\"tradeType\":1,\"txId\":\"0x8b56b0c26b809daaf22aa4119f2dbda53f22e8e38283f43f96124813bdb065e1\"}"}
+
+body: {"address":"0xbcfa46678baf670c918943c064defd817e9a919e","amount":"413172000","blockHigh":"22165580","coinType":"0xdac17f958d2ee523a2206206994597c13d831ec7","decimals":"6","fee":"160639977168129","mainCoinType":"60","memo":"","status":3,"tradeId":"1356298213799223296","tradeType":1,"txId":"0x8b56b0c26b809daaf22aa4119f2dbda53f22e8e38283f43f96124813bdb065e1"}
+
+2025-03-31 17:04:530xbcfa46678baf670c918943c064defd817e9a919e: 验证签名成功
+
+2025-03-31 17:04:53充币回调成功
+
+2025-03-31 17:04:53交易成功
+
+2025-03-31 17:04:53获取用户地址成功
+
+2025-03-31 17:04:53获取用户成功:61258670
+
+用户:61258670 address:0xbcfa46678baf670c918943c064defd817e9a919e，U盾充值：413.172
+
+2025-04-01 17:22:07{"attributes":{},"request":{},"query":{},"server":{},"files":{},"cookies":{},"headers":{}}
+
+{"timestamp":"1743495727095","nonce":"zyLPh2","sign":"252e67f095467018a432002470ecde78","body":"{\"address\":\"TT8N3sQfF3zrVGsfUZFrmWBQUsaLvZSfbm\",\"amount\":\"2\",\"blockHigh\":\"70947446\",\"coinType\":\"195\",\"decimals\":\"6\",\"fee\":\"0\",\"mainCoinType\":\"195\",\"memo\":\"\",\"status\":3,\"tradeId\":\"1356664930890145792\",\"tradeType\":1,\"txId\":\"e1367c36bc8a9f1907a1b30453764d9bad868a89bba51517700d39c3a9b08c98\"}"}
+
+body: {"address":"TT8N3sQfF3zrVGsfUZFrmWBQUsaLvZSfbm","amount":"2","blockHigh":"70947446","coinType":"195","decimals":"6","fee":"0","mainCoinType":"195","memo":"","status":3,"tradeId":"1356664930890145792","tradeType":1,"txId":"e1367c36bc8a9f1907a1b30453764d9bad868a89bba51517700d39c3a9b08c98"}
+
+2025-04-01 17:22:07TT8N3sQfF3zrVGsfUZFrmWBQUsaLvZSfbm: 验证签名成功
+
+2025-04-01 17:22:07充币回调成功
+
+2025-04-01 17:22:07交易成功
+
+2025-04-01 17:22:07获取用户地址成功
+
+2025-04-01 17:22:07获取用户成功:4265485
+
+用户:4265485 address:TT8N3sQfF3zrVGsfUZFrmWBQUsaLvZSfbm，U盾充值：2.0E-6
+
+2025-04-04 21:59:17{"attributes":{},"request":{},"query":{},"server":{},"files":{},"cookies":{},"headers":{}}
+
+{"timestamp":null,"nonce":null,"sign":null,"body":null}
+
+body: 
+
+2025-04-04 21:59:17签名验证失败
+
+2025-04-05 17:01:58{"attributes":{},"request":{},"query":{},"server":{},"files":{},"cookies":{},"headers":{}}
+
+{"timestamp":"1743840110664","nonce":"lcBKWl","sign":"e94c3024d3e0e07630559dd11fa95101","body":"{\"address\":\"TQVN6oqnViRHxmDvgeyvEpsFKwBBx5PNj2\",\"amount\":\"12740000\",\"blockHigh\":\"71062209\",\"coinType\":\"TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t\",\"decimals\":\"6\",\"fee\":\"0\",\"mainCoinType\":\"195\",\"memo\":\"\",\"status\":3,\"tradeId\":\"1358109384087953408\",\"tradeType\":1,\"txId\":\"a1e0b3b179c48eacb7e709919c633e25b976886dc8abc01bb497c424efa792d9\"}"}
+
+body: {"address":"TQVN6oqnViRHxmDvgeyvEpsFKwBBx5PNj2","amount":"12740000","blockHigh":"71062209","coinType":"TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t","decimals":"6","fee":"0","mainCoinType":"195","memo":"","status":3,"tradeId":"1358109384087953408","tradeType":1,"txId":"a1e0b3b179c48eacb7e709919c633e25b976886dc8abc01bb497c424efa792d9"}
+
+2025-04-05 17:01:58TQVN6oqnViRHxmDvgeyvEpsFKwBBx5PNj2: 验证签名成功
+
+2025-04-05 17:01:58充币回调成功
+
+2025-04-05 17:01:58交易成功
+
+2025-04-05 17:01:58获取用户地址成功
+
+2025-04-05 17:01:58获取用户成功:83890672
+
+用户:83890672 address:TQVN6oqnViRHxmDvgeyvEpsFKwBBx5PNj2，U盾充值：12.74

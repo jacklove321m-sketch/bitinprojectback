@@ -1,0 +1,1 @@
+74---{"id":93,"match_id":74,"legal_id":3,"currency_id":10021,"change":"+5.43","volume":"29116355.70916","now_price":"0.35773","add_time":1724227253,"open":"0.00000","close":"0.00000","high":"0.00000","low":"0.00000","currency_name":"ADA","legal_name":"USDT","rmb_relation":"6.4"}

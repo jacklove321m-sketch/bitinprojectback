@@ -26,10 +26,10 @@ autotask/runtime/*
 !autotask/runtime/.gitignore
 
 # Uploads / generated files
-public/upload/**
-public/upload_nft/**
-public/json/upload/**
-autotask/public/upload/**
+#public/upload/**
+#public/upload_nft/**
+#public/json/upload/**
+#autotask/public/upload/**
 
 # Public static assets, images, and bundled dependencies
 # public/static/
@@ -46,7 +46,7 @@ autotask/public/upload/**
 # public/*.ttf
 
 # Maps / archives
-public/**/*.map
+#public/**/*.map
 *.zip
 *.rar
 *.tar
